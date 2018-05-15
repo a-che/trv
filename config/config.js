@@ -4,6 +4,7 @@ let chai = require("chai");
 let chaiAsPromised = require("chai-as-promised");
 chai.use(chaiAsPromised);
 let should = chai.should();
+let reporter = require("cucumber-html-reporter");
 
 exports.config = {
     seleniumAddress: "http://localhost:4444/wd/hub",
@@ -13,10 +14,8 @@ exports.config = {
     },
     allScriptsTimeout: 1000000,
     framework: "custom",
-    resultJsonOutputFile: "./reports/json/protractor_report.json",
     theme: 'bootstrap',
     jsonFile: 'reports/cucumber_report.json',
-    output: 'reports/cucumber_report.html',
     frameworkPath: require.resolve("protractor-cucumber-framework"),
     specs: [
         "../features/*.feature"
@@ -30,13 +29,14 @@ exports.config = {
     },
     cucumberOpts: {
         strict: true,
-        format: ["node_modules/cucumber-pretty"],
+        format: [
+            "json:reports/cucumber-report.json", "node_modules/cucumber-pretty"
+        ],
         plugin: ["pretty"],
         require: [
             "../cucumber/step_definitions/*.js",
             "report.js"
         ]
-
     },
 
     useAllAngular2AppRoots: true

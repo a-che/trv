@@ -1,0 +1,370 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Task 2. Search and fill contact form",
+    "line": 1,
+    "id": "task-2.-search-and-fill-contact-form",
+    "tags": [],
+    "uri": "features/Task2.feature",
+    "elements": [
+      {
+        "id": "task-2.-search-and-fill-contact-form;search-specific-article---check-results---clear-data",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Search specific article - check results - clear data",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I go on \"http://room5.trivago.com/\" url",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5526
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "I wait until \"EDITOR'S PICK\" will be displayed on current page",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 314
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click to search icon in header",
+            "match": {
+              "location": "cucumber/step_definitions/search.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I wait until search input will be displayed on current page",
+            "match": {
+              "location": "cucumber/step_definitions/search.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I type \"11 Best Gay Pride Parades Where You Can Be Loud and Be Proud\" in search input",
+            "match": {
+              "location": "cucumber/step_definitions/search.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1314
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "only \"1\" search result should be found",
+            "match": {
+              "location": "cucumber/step_definitions/search.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2671
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I should see post with title \"11 Best Gay Pride Parades Where You Can Be Loud and Be Proud\" in search results",
+            "match": {
+              "location": "cucumber/step_definitions/search.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I clear data in search input",
+            "match": {
+              "location": "cucumber/step_definitions/search.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "search results should be reset",
+            "match": {
+              "location": "cucumber/step_definitions/search.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68
+            }
+          }
+        ]
+      },
+      {
+        "id": "task-2.-search-and-fill-contact-form;fill-in-the-contact-form-and-send-it",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Fill in the contact form and send it",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I go on \"http://room5.trivago.com/\" url",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2063
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "I wait until \"EDITOR'S PICK\" will be displayed on current page",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 305
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I scroll to link \"Contact\" and click",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I wait until \"Please give us feedback on what you want to read about!\" will be displayed on current page",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I fill \"this is my feedback message\" to \"Your Message\"",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 471
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I fill \"Artem Chechoro\" to \"Full Name\"",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 226
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I fill \"artem.chechoro@mailinator.com\" to \"Your Email\"",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 264
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I press submit",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1991
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I wait until \"Message Sent Successfully!\" will be displayed on current page",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 173
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I press submit",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1225
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "I wait until \"All fields are required!\" will be displayed on current page",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I fill \"this is my feedback message\" to \"Your Message\"",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 403
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I press submit",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "I wait until \"All fields are required!\" will be displayed on current page",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "I fill \"Artem Chechoro\" to \"Full Name\"",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 211
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I press submit",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1476
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "I wait until \"All fields are required!\" will be displayed on current page",
+            "match": {
+              "location": "cucumber/step_definitions/general.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 192
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

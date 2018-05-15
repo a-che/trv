@@ -1,5 +1,4 @@
-@art
-Feature: Search feature
+Feature: Task 2. Search and fill contact form
     Background:
         Given I go on "http://room5.trivago.com/" url
         Then I wait until "EDITOR'S PICK" will be displayed on current page
