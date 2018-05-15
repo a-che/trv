@@ -1,0 +1,27 @@
+{
+  "name": "protractor-tests",
+  "version": "1.0.0",
+  "author": "artem.chechoro@gmail.com",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor config/config.js",
+    "webdriver-start": "webdriver-manager start",
+    "webdriver-update": "webdriver-manager update"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-jquery": "^2.0.0",
+    "cucumber": "^3.1.0",
+    "cucumber-html-report": "^0.6.2",
+    "cucumber-html-reporter": "^3.0.4",
+    "cucumber-pretty": "0.0.5",
+    "cucumberjs-allure-reporter": "^1.0.3",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^3.2.1",
+    "mkdirp": "^0.5.1",
+    "protractor": "^5.2.0",
+    "protractor-cucumber-framework": "^4.1.1"
+  }
+}
